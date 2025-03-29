@@ -31,7 +31,25 @@ nav {
   top: 0;
   z-index: 1000;
 }
-
+.image{
+  width: 80px;
+  height: 80px;
+  border-radius: 55% 45% 55% 45%;
+  overflow: hidden;
+  animation: imgFloat 7s ease-in-out infinite;
+  }
+  .image img{
+  width: 380px;
+  height: 380px;
+  
+  }
+  @keyframes imgFloat {
+  50%{
+      transform: translateX(20px);
+      border-radius: 45% 55% 45% 55%;
+  }
+  }
+  
 .nav-toggle {
   display: none;
   background: none;
@@ -99,7 +117,6 @@ footer {
   background: #9a6f59;
   color: whitesmoke;
   text-align: center;
-  padding: var(--spacing-md);
 }
 
 /* Responsive */
